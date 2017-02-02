@@ -24,7 +24,7 @@ int main()
 
     int x;
     for ( x = 0 ; x < SIZE ; x++ ) {
-      src[ x ] = dst[ x ]-1;
+      __VERIFIER_assert(src[ x ] == dst[ x ]-1);
     }
   return 0;
 }
